@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panggilan Darurat 112</title>
+  <style>
+    :root {
+      --primary-color: #d62828;
+      --secondary-color: #f77f00;
+      --background-color: #f9f9f9;
+      --text-color: #222;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    section img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0 0 0 12px;
+    }
+    .content {
+      flex: 1 1 320px;
+      padding: 1.5rem 2rem;
+    }
+    .content h2 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .content ul {
+      padding-left: 1.2rem;
+    }
+    .content ul li {
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+    .alert {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 10px rgba(214, 40, 40, 0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      margin-top: 3rem;
+    }
+    @media (max-width: 720px) {
+      section {
+        flex-direction: column;
+      }
+      section img {
+        border-radius: 12px 12px 0 0;
+        max-width: 100%;
+        height: auto;
+      }
+      .content {
+        padding: 1rem 1rem 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Panggilan Darurat 112</h1>
+    <p>Layanan panggilan darurat terpadu yang siap membantu Anda saat situasi kritis dan memerlukan respon cepat.</p>
+  </header>
+  <main>
+    <section>
+      <img src="https://images.unsplash.com/photo-1581090700227-196c61e90ba8?auto=format&fit=crop&w=600&q=80" alt="Operator Panggilan Darurat" />
+      <div class="content">
+        <h2>Apa Itu Panggilan Darurat 112?</h2>
+        <p>Panggilan Darurat 112 adalah nomor telepon layanan darurat terpadu yang dapat digunakan untuk menghubungi petugas kepolisian, pemadam kebakaran, dan layanan ambulans di seluruh Indonesia.</p>
+      </div>
+    </section>
+
+    <section>
+      <img src="https://images.unsplash.com/photo-1562072540-6a2736a41aae?auto=format&fit=crop&w=600&q=80" alt="Panggilan Darurat di Smartphone" />
+      <div class="content">
+        <h2>Kapan Menggunakan 112?</h2>
+        <ul>
+          <li>Kecelakaan lalu lintas yang membutuhkan pertolongan segera</li>
+          <li>Kebakaran di rumah, gedung, atau lingkungan sekitar</li>
+          <li>Kondisi medis darurat seperti serangan jantung atau kecelakaan berat</li>
+          <li>Ancaman kriminal atau situasi membahayakan keselamatan jiwa</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <img src="https://images.unsplash.com/photo-1533419024984-dbd428cb14f7?auto=format&fit=crop&w=600&q=80" alt="Tim Respon Darurat" />
+      <div class="content">
+        <h2>Bagaimana Cara Menghubungi?</h2>
+        <p>Anda cukup menghubungi nomor <strong>112</strong> dari telepon seluler atau telepon rumah. Pastikan untuk memberi tahu lokasi kejadian yang jelas dan detail masalah secara singkat namun lengkap.</p>
+        <p>Pastikan nomor ini digunakan hanya untuk keadaan darurat agar petugas dapat merespon dengan cepat dan optimal.</p>
+      </div>
+    </section>
+
+    <div class="alert">
+      Ingat! <br />
+      Gunakan layanan 112 hanya untuk keadaan darurat agar layanan tetap optimal dan cepat!
+    </div>
+  </main>
+  <footer>
+    &copy; 2024 Layanan Darurat Nasional
+  </footer>
+</body>
+</html>

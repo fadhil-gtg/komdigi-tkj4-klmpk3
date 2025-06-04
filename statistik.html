@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Statistik Penting</title>
+<style>
+  :root {
+    --primary-color: #0077b6;
+    --secondary-color: #023e8a;
+    --accent-color: #00b4d8;
+    --bg-color: #f7fbff;
+    --text-color: #03045e;
+    --font-family: 'Poppins', sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+  }
+  header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 3rem 1rem;
+    text-align: center;
+    color: white;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  header p {
+    margin: 0.5rem auto 0;
+    max-width: 600px;
+    font-size: 1.2rem;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+  .stat-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.15);
+  }
+  .stat-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .stat-content {
+    padding: 1.5rem 1.8rem 2rem 1.8rem;
+    text-align: center;
+  }
+  .number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    margin: 0 0 0.3rem 0;
+  }
+  .description {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+  }
+  @media (max-width: 400px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .number {
+      font-size: 2.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Statistik Penting</h1>
+  <p>Data dan angka kunci yang memberikan gambaran tentang berbagai aspek perkembangan dan kehidupan masyarakat.</p>
+</header>
+<main>
+  <article class="stat-card">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Populasi" class="stat-image"/>
+    <div class="stat-content">
+      <div class="number">275 Juta</div>
+      <div class="description">Populasi Penduduk Indonesia saat ini</div>
+    </div>
+  </article>
+  <article class="stat-card">
+    <img src="https://images.unsplash.com/photo-1532619675605-8b1c8862efb9?auto=format&fit=crop&w=600&q=80" alt="Pendidikan" class="stat-image" />
+    <div class="stat-content">
+      <div class="number">92%</div>
+      <div class="description">Tingkat Melek Huruf Nasional</div>
+    </div>
+  </article>
+  <article class="stat-card">
+    <img src="https://images.unsplash.com/photo-1476842637782-1074de385ad7?auto=format&fit=crop&w=600&q=80" alt="Ekonomi" class="stat-image" />
+    <div class="stat-content">
+      <div class="number">5,1%</div>
+      <div class="description">Pertumbuhan Produk Domestik Bruto (PDB) Tahunan</div>
+    </div>
+  </article>
+  <article class="stat-card">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=600&q=80" alt="Infrastruktur" class="stat-image" />
+    <div class="stat-content">
+      <div class="number">45 Ribu</div>
+      <div class="description">Km Jalan Tol di Seluruh Indonesia</div>
+    </div>
+  </article>
+  <article class="stat-card">
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="Kesehatan" class="stat-image" />
+    <div class="stat-content">
+      <div class="number">78 Tahun</div>
+      <div class="description">Harapan Hidup Rata-rata Penduduk</div>
+    </div>
+  </article>
+  <article class="stat-card">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Internet" class="stat-image" />
+    <div class="stat-content">
+      <div class="number">77%</div>
+      <div class="description">Persentase Penduduk yang Terhubung Internet</div>
+    </div>
+  </article>
+</main>
+<footer>
+  &copy; 2024 Data Statistik Pemerintah Indonesia
+</footer>
+</body>
+</html>
