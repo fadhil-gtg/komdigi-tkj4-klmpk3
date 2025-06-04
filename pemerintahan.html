@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pemerintahan Digital</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #004085;
+      --secondary-color: #6c757d;
+      --bg-hero-gradient: linear-gradient(135deg, #003366 0%, #007bff 100%);
+      --hero-text-color: #f8f9fa;
+      --section-padding: 4rem 1rem;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f3f5;
+      color: #212529;
+    }
+    header {
+      background-color: var(--primary-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    header .navbar-brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: white;
+      letter-spacing: 1.1px;
+    }
+    header .navbar-nav .nav-link {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    header .navbar-nav .nav-link:hover {
+      color: #ffc107;
+    }
+
+    .hero {
+      background: var(--bg-hero-gradient);
+      color: var(--hero-text-color);
+      text-align: center;
+      padding: var(--section-padding);
+      border-radius: 0 0 3rem 3rem;
+      box-shadow: 0 8px 16px rgba(0, 99, 204, 0.5);
+    }
+    .hero h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 650px;
+      margin: 0 auto 2rem auto;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.18);
+    }
+    .hero .btn-primary {
+      background-color: #ffc107;
+      border: none;
+      color: var(--primary-color);
+      font-weight: 700;
+      padding: 0.75rem 2.5rem;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(255, 193, 7, 0.7);
+      transition: background-color 0.3s ease;
+    }
+    .hero .btn-primary:hover {
+      background-color: #e0a800;
+      color: #212529;
+      box-shadow: 0 6px 16px rgba(224, 168, 0, 0.85);
+    }
+
+    .services {
+      padding: var(--section-padding);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .services .service {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      height: 100%;
+      text-align: center;
+    }
+    .services .service:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+    .services .service-icon {
+      font-size: 3.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    .services h3 {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .services p {
+      color: var(--secondary-color);
+      font-size: 1rem;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      color: #343a40;
+      text-align: center;
+    }
+    .about h2 {
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    #contact {
+      padding: var(--section-padding);
+      max-width: 900px;
+      margin: 0 auto 3rem auto;
+      text-align: center;
+    }
+    #contact h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    #contact p {
+      margin-bottom: 2rem;
+      color: #495057;
+      font-size: 1rem;
+    }
+    #contact .btn-outline-primary {
+      margin: 0 0.7rem;
+    }
+
+    footer {
+      background-color: #203354;
+      color: #ced4da;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      user-select: none;
+    }
+  </style>
+  <!-- Bootstrap icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand" href="#">Pemerintahan Digital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" disabled>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Membangun Masa Depan Digital Pemerintahan</h1>
+  <p>Menghadirkan layanan pemerintah yang transparan, inklusif, dan mudah diakses oleh seluruh masyarakat.</p>
+  <a href="#services" class="btn btn-primary">Lihat Layanan</a>
+</section>
+
+<section id="services" class="services my-5">
+  <h2 class="text-center mb-5 fw-bold">Layanan Digital Kami</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="service">
+        <i class="bi bi-file-earmark-text service-icon"></i>
+        <h3>Pengajuan Dokumen Online</h3>
+        <p>Mudahkan proses pengajuan dokumen penting secara daring dengan sistem yang terpercaya dan cepat.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service">
+        <i class="bi bi-chat-dots service-icon"></i>
+        <h3>Layanan Aduan Masyarakat</h3>
+        <p>Sampaikan keluhan dan aspirasi Anda secara langsung melalui platform digital kami.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service">
+        <i class="bi bi-bar-chart-line service-icon"></i>
+        <h3>Dashboard Statistik Publik</h3>
+        <p>Akses data dan statistik pelayanan publik yang transparan dan terbaru untuk pengambilan keputusan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>Visi dan Misi</h2>
+  <p>
+    Pemerintahan Digital bertujuan untuk meningkatkan kualitas pelayanan publik melalui teknologi digital terkini. Kami ingin memastikan setiap warga dapat mengakses layanan secara efisien dan mendapatkan informasi yang akurat. Visi kami adalah pemerintahan yang transparan, partisipatif, dan responsif.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Hubungi Kami</h2>
+  <p>Untuk pertanyaan atau dukungan, silakan hubungi kontak berikut:</p>
+  <div class="d-flex justify-content-center gap-3 flex-wrap">
+    <a href="mailto:contact@pemerintahtandigital.go.id" class="btn btn-outline-primary">
+      <i class="bi bi-envelope-fill"></i> Email
+    </a>
+    <a href="https://facebook.com/pemerintahtandigital" target="_blank" class="btn btn-outline-primary">
+      <i class="bi bi-facebook"></i> Facebook
+    </a>
+    <a href="https://twitter.com/pemerintahtandigital" target="_blank" class="btn btn-outline-primary">
+      <i class="bi bi-twitter"></i> Twitter
+    </a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2024 Pemerintahan Digital. Semua hak cipta dilindungi.
+</footer>
+
+</body>
+</html>
+
